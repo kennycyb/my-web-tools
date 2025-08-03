@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Navigation from './components/Navigation'
 import Home from './pages/Home'
 import JsonPrettier from './pages/tools/JsonPrettier'
+import QRCodeGenerator from './pages/tools/QRCodeGenerator'
 import './App.css'
 
 function App() {
@@ -19,10 +20,7 @@ function App() {
           <p>Coming Soon...</p>
         </div>
       case 'qr-code':
-        return <div style={{ padding: '2rem', textAlign: 'center' }}>
-          <h2>QR Code Generator</h2>
-          <p>Coming Soon...</p>
-        </div>
+        return <QRCodeGenerator />
       default:
         return <Home />
     }
