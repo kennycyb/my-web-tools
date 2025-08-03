@@ -1,0 +1,67 @@
+.qr-generator {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.tool-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.qr-controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.qr-input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.btn-download {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem 1.2rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.btn-download:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.qr-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 220px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.qr-placeholder {
+  color: #888;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.error-message {
+  color: #c00;
+  background: #ffeaea;
+  padding: 0.75rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
