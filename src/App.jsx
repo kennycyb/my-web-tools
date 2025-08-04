@@ -3,6 +3,7 @@ import Navigation from './components/Navigation'
 import Home from './pages/Home'
 import JsonPrettier from './pages/tools/JsonPrettier'
 import QRCodeGenerator from './pages/tools/QRCodeGenerator'
+import Calculator from './pages/tools/Calculator'
 import './App.css'
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
         return <Home />
       case 'json-prettier':
         return <JsonPrettier />
+      case 'calculator':
+        return <Calculator />
       case 'ip-info':
         return <div style={{ padding: '2rem', textAlign: 'center' }}>
           <h2>IP Info Tool</h2>
