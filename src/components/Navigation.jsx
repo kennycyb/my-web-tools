@@ -6,6 +6,7 @@ const Navigation = ({ currentTool, onToolChange }) => {
     { id: 'home', name: 'Home', icon: '🏠' },
     { id: 'json-prettier', name: 'JSON Prettier', icon: '🔧' },
     { id: 'calculator', name: 'Calculator', icon: '🧮' },
+    { id: 'timestamp-converter', name: 'Timestamp Converter', icon: '⏱️' },
     { id: 'ip-info', name: 'IP Info', icon: '🌐' },
     { id: 'qr-code', name: 'QR Code', icon: '📱' }
   ];
