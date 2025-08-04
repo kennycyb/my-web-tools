@@ -45,12 +45,24 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="tool-card coming-soon">
-          <div className="tool-icon">🔐</div>
-          <h3>Base64 Encoder</h3>
+        <div className="tool-card">
+          <div className="tool-icon">�️</div>
+          <h3>BASE64 Tool</h3>
           <p>Encode and decode Base64 strings</p>
           <div className="tool-features">
-            <span>• Coming Soon</span>
+            <span>• Encode text</span>
+            <span>• Decode Base64</span>
+            <span>• Error handling</span>
+          </div>
+        </div>
+        <div className="tool-card">
+          <div className="tool-icon">⏱️</div>
+          <h3>Timestamp Converter</h3>
+          <p>Convert between Unix timestamps and human-readable dates</p>
+          <div className="tool-features">
+            <span>• Timestamp → Date</span>
+            <span>• Date → Timestamp</span>
+            <span>• Error handling</span>
           </div>
         </div>
       </div>
