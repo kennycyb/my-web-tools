@@ -5,6 +5,7 @@ import JsonPrettier from './pages/tools/JsonPrettier'
 import QRCodeGenerator from './pages/tools/QRCodeGenerator'
 import Calculator from './pages/tools/Calculator'
 import TimestampConverter from './pages/tools/TimestampConverter'
+import Base64Tool from './pages/tools/Base64Tool'
 import './App.css'
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
         return <Calculator />
       case 'timestamp-converter':
         return <TimestampConverter />
+      case 'base64-tool':
+        return <Base64Tool />
       case 'ip-info':
         return <div style={{ padding: '2rem', textAlign: 'center' }}>
           <h2>IP Info Tool</h2>

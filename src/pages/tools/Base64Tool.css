@@ -1,0 +1,78 @@
+.base64-tool {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.base64-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.mode-select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.base64-input {
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+.btn-convert {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-convert:disabled {
+  background: #b0b0b0;
+  cursor: not-allowed;
+}
+
+.btn-convert:hover:not(:disabled) {
+  background: #0056b3;
+}
+
+.error-message {
+  color: #d9534f;
+  margin-bottom: 1rem;
+}
+
+.base64-result {
+  background: #f8f9fa;
+  border-radius: 6px;
+  padding: 1rem;
+  font-size: 1.1rem;
+  color: #333;
+  margin-top: 1rem;
+}
+
+.base64-result pre {
+  white-space: pre-wrap;
+  word-break: break-all;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .base64-tool {
+    padding: 1rem;
+    max-width: 100%;
+  }
+  .base64-result {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+}
