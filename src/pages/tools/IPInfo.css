@@ -1,0 +1,218 @@
+.ip-info {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.ip-controls {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.btn-refresh {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-refresh:hover:not(:disabled) {
+  background: #0056b3;
+  transform: translateY(-1px);
+}
+
+.btn-refresh:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.error-message {
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.error-icon {
+  font-size: 1.2rem;
+}
+
+.ip-result {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.ip-card {
+  background: #ffffff;
+  border: 2px solid #e9ecef;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ip-main h2 {
+  margin: 0 0 1rem 0;
+  color: #333;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.ip-address {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.ip-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007bff;
+  font-family: 'Courier New', monospace;
+  background: #f8f9fa;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+}
+
+.btn-copy {
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.btn-copy:hover {
+  background: #1e7e34;
+  transform: scale(1.1);
+}
+
+.ip-details {
+  border-top: 1px solid #dee2e6;
+  padding-top: 1.5rem;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f8f9fa;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #6c757d;
+}
+
+.detail-value {
+  font-family: 'Courier New', monospace;
+  color: #333;
+}
+
+.ip-info-note {
+  background: #e7f3ff;
+  border: 1px solid #bee5eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.ip-info-note h3 {
+  margin: 0 0 1rem 0;
+  color: #0c5460;
+}
+
+.ip-info-note ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.ip-info-note li {
+  margin-bottom: 0.5rem;
+  color: #0c5460;
+}
+
+.loading-spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #007bff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-spinner p {
+  color: #6c757d;
+  font-size: 1.1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .ip-info {
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  .ip-card {
+    padding: 1.5rem;
+  }
+
+  .ip-value {
+    font-size: 1.5rem;
+  }
+
+  .detail-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
+  .ip-address {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ip-value {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+}

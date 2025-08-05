@@ -6,6 +6,7 @@ import QRCodeGenerator from './pages/tools/QRCodeGenerator'
 import Calculator from './pages/tools/Calculator'
 import TimestampConverter from './pages/tools/TimestampConverter'
 import Base64Tool from './pages/tools/Base64Tool'
+import IPInfo from './pages/tools/IPInfo'
 import './App.css'
 
 function App() {
@@ -24,10 +25,7 @@ function App() {
       case 'base64-tool':
         return <Base64Tool />
       case 'ip-info':
-        return <div style={{ padding: '2rem', textAlign: 'center' }}>
-          <h2>IP Info Tool</h2>
-          <p>Coming Soon...</p>
-        </div>
+        return <IPInfo />
       case 'qr-code':
         return <QRCodeGenerator />
       default:
