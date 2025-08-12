@@ -7,6 +7,7 @@ import Calculator from './pages/tools/Calculator'
 import TimestampConverter from './pages/tools/TimestampConverter'
 import Base64Tool from './pages/tools/Base64Tool'
 import IPInfo from './pages/tools/IPInfo'
+import ChineseCalendar from './pages/tools/ChineseCalendar'
 import './App.css'
 
 function App() {
@@ -26,6 +27,8 @@ function App() {
         return <Base64Tool />
       case 'ip-info':
         return <IPInfo />
+      case 'chinese-calendar':
+        return <ChineseCalendar />
       case 'qr-code':
         return <QRCodeGenerator />
       default:

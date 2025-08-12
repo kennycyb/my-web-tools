@@ -1,0 +1,247 @@
+.chinese-calendar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.intro-text {
+  background: #f8f9fa;
+  border-left: 4px solid #007bff;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 0 8px 8px 0;
+}
+
+.intro-text p {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.current-time-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.current-time h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.time-display {
+  margin-bottom: 1rem;
+}
+
+.modern-time {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.current-shichen {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.shichen-name {
+  color: #ffd700;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.shichen-alias {
+  color: #e0e0e0;
+  font-size: 0.8em;
+  margin-left: 0.5rem;
+}
+
+.current-description {
+  font-size: 1.2rem;
+  font-style: italic;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.shichen-table-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.shichen-table {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dee2e6;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr 1fr 3fr;
+  background: #343a40;
+  color: white;
+  font-weight: bold;
+  padding: 0;
+}
+
+.table-header > div {
+  padding: 1rem;
+  border-right: 1px solid #495057;
+}
+
+.table-header > div:last-child {
+  border-right: none;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr 1fr 3fr;
+  border-bottom: 1px solid #dee2e6;
+  transition: all 0.2s ease;
+}
+
+.table-row:hover {
+  background: #f8f9fa;
+}
+
+.table-row.current {
+  background: #e3f2fd;
+  border-left: 4px solid #2196f3;
+  font-weight: bold;
+}
+
+.table-row.current:hover {
+  background: #bbdefb;
+}
+
+.table-row > div {
+  padding: 1rem;
+  border-right: 1px solid #dee2e6;
+  display: flex;
+  align-items: center;
+}
+
+.table-row > div:last-child {
+  border-right: none;
+}
+
+.col-shichen {
+  font-weight: bold;
+  color: #007bff;
+  font-size: 1.1rem;
+}
+
+.col-branch {
+  font-family: 'Times New Roman', serif;
+  font-weight: bold;
+  color: #dc3545;
+}
+
+.col-time {
+  font-family: 'Courier New', monospace;
+  color: #28a745;
+}
+
+.col-alias {
+  font-style: italic;
+  color: #6f42c1;
+}
+
+.col-description {
+  line-height: 1.4;
+  color: #495057;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .table-header,
+  .table-row {
+    grid-template-columns: 1fr 0.8fr 1.2fr 1fr 2fr;
+  }
+
+  .table-header > div,
+  .table-row > div {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .chinese-calendar {
+    padding: 1rem;
+  }
+
+  .current-time-section {
+    padding: 1.5rem;
+  }
+
+  .modern-time {
+    font-size: 1.4rem;
+  }
+
+  .current-shichen {
+    font-size: 2rem;
+  }
+
+  .current-description {
+    font-size: 1rem;
+  }
+
+  .table-header,
+  .table-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .table-header > div,
+  .table-row > div {
+    border-right: none;
+    border-bottom: 1px solid #dee2e6;
+    padding: 0.5rem;
+  }
+
+  .table-header > div:before,
+  .table-row > div:before {
+    content: attr(data-label);
+    font-weight: bold;
+    margin-right: 0.5rem;
+    color: #007bff;
+  }
+
+  .table-header {
+    display: none;
+  }
+
+  .table-row > div {
+    display: block;
+  }
+
+  .col-shichen:before { content: "时辰: "; }
+  .col-branch:before { content: "地支: "; }
+  .col-time:before { content: "现代时间: "; }
+  .col-alias:before { content: "别称: "; }
+  .col-description:before { content: "典故/习俗: "; }
+}
+
+@media (max-width: 480px) {
+  .intro-text {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .current-shichen {
+    font-size: 1.8rem;
+  }
+
+  .modern-time {
+    font-size: 1.2rem;
+  }
+}
