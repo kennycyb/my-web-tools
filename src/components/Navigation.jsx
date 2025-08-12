@@ -8,6 +8,7 @@ const Navigation = ({ currentTool, onToolChange }) => {
     { id: 'calculator', name: 'Calculator', icon: '🧮' },
     { id: 'timestamp-converter', name: 'Timestamp Converter', icon: '⏱️' },
     { id: 'base64-tool', name: 'BASE64 Tool', icon: '🗝️' },
+    { id: 'chinese-calendar', name: 'Chinese Calendar', icon: '🏮' },
     { id: 'ip-info', name: 'IP Info', icon: '🌐' },
     { id: 'qr-code', name: 'QR Code', icon: '📱' }
   ];
