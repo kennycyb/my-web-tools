@@ -18,7 +18,7 @@ This document provides comprehensive information about the repository structure,
 ## Repository Structure
 
 ```
-/home/runner/work/my-web-tools/my-web-tools/
+.
 ├── .github/
 │   ├── copilot-instructions.md    # Workspace-specific Copilot instructions
 │   ├── dependabot.yml             # Automated dependency updates configuration
@@ -26,6 +26,9 @@ This document provides comprehensive information about the repository structure,
 │       ├── ci.yml                 # Main CI/CD pipeline
 │       ├── dependabot-auto-approve.yml
 │       └── security.yml           # Security scanning workflow
+├── .gitignore                     # Git ignore rules
+├── AGENTS.md                      # This file - AI assistant documentation
+├── docs/                          # Documentation directory
 ├── public/
 │   ├── .htaccess                  # Security and caching configuration for Apache
 │   └── vite.svg                   # Favicon
@@ -49,11 +52,12 @@ This document provides comprehensive information about the repository structure,
 │   ├── App.css
 │   ├── main.jsx                   # Application entry point
 │   └── index.css                  # Global styles
-├── index.html                     # HTML template
-├── vite.config.js                 # Vite build configuration
 ├── eslint.config.js               # ESLint configuration
+├── index.html                     # HTML template
 ├── package.json                   # Project dependencies and scripts
-└── README.md                      # Project documentation
+├── package-lock.json              # Locked dependency versions
+├── README.md                      # Project documentation
+└── vite.config.js                 # Vite build configuration
 ```
 
 ## Technology Stack
