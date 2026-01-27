@@ -310,4 +310,4 @@ Currently, the project does not have a test suite configured. When adding tests:
 - **Owner**: kennycyb
 - **Update Frequency**: Weekly dependency updates via Dependabot
 - **Review Process**: All changes go through PR review
-- **CI/CD**: Automated testing and building on all PRs
+- **CI/CD**: Automated linting and building on all PRs
