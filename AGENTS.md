@@ -114,7 +114,7 @@ npm run lint
 npm run build
 
 # Preview production build
-npm preview
+npm run preview
 ```
 
 ## Build Process
