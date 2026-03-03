@@ -1,4 +1,4 @@
-import { render, screen, within } from '@testing-library/react'
+import { render, within } from '@testing-library/react'
 import { describe, test, expect } from 'vitest'
 import userEvent from '@testing-library/user-event'
 import Base64Tool from '../Base64Tool'
