@@ -1,14 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import './ChineseCalendar.css';
 
-const ChineseCalendar = () => {
-  const [currentTime, setCurrentTime] = useState(new Date());
-  const [currentShichen, setCurrentShichen] = useState('');
-
-  const shichenData = [
-    {
-      name: '子时',
-      earthlyBranch: '子',
+const shichenData = [
+  {
+    name: '子时',
+    earthlyBranch: '子',
       modernTime: '23:00 - 01:00',
       alias: '夜半',
       description: '一天的开始，传说是"子时一到，阳气生"',
@@ -114,7 +110,10 @@ const ChineseCalendar = () => {
       startHour: 21,
       endHour: 23
     }
-  ];
+];
+
+const ChineseCalendar = () => {
+  const [currentTime, setCurrentTime] = useState(new Date());
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -124,7 +123,7 @@ const ChineseCalendar = () => {
     return () => clearInterval(timer);
   }, []);
 
-  useEffect(() => {
+  const currentShichen = useMemo(() => {
     const hour = currentTime.getHours();
     let current = '';
 
@@ -141,7 +140,7 @@ const ChineseCalendar = () => {
       }
     }
 
-    setCurrentShichen(current);
+    return current;
   }, [currentTime]);
 
   const getCurrentShichenData = () => {
