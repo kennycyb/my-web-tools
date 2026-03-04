@@ -40,9 +40,8 @@ jobs:
           fi
         continue-on-error: false
 
-    # Add tests when available
-    # - name: Run tests
-    #   run: npm test
+      - name: Run tests
+        run: npm test
 
   build:
     name: Build Application
